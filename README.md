@@ -1,1 +1,1 @@
-# data_literacy_fundamentals
+# data_literacy
