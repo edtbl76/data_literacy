@@ -227,4 +227,110 @@ This creates two wonderful anecdotes to remind us that sometimes the most powerf
 
 ### Accuracy
 
-Accuracy is extremely important. 
+Accuracy is extremely important. Some would argue it's everything. For the most part this is true. 
+
+When dealing with continuous variables, accuracy becomes constrained by the needed fidelity of the measurement. 
+
+When dealing with text-based variables, accuracy can be perceived, despite different representations. M, Male, male, man, masculine might all perceived as equivalent responses for a value to the human eye, but to machines, these are 5 **different** representations. 
+
+Common issues with accuracy are 
+- poor, inconsistent measurement
+- lack of necessary fidelity
+- mistakes! typos! 
+- duplicated observations
+
+
+#### Techniques for evaluating accuracy
+
+- Compare observed results with expectations and common sense
+  - evaluate outliers to the distributions
+  - look for clusters of improbable or erroneous data (i.e. a systematic flow or error with the data rather than just one-off errors or edge cases)
+
+- Think critically about how errors can occur? 
+  - audit the data collection process. Where can errors and flaws sneak into the process? 
+  - What gaps are sensible to resolve or constrain? (and how?)
+  - Look for manual processes, or workarounds that circumvent constraints or sanitization
+
+- Look for duplicates
+  - Identify areas where data can be duplicated. 
+  - You can't always prevent this, and sometimes it is even desirable in different data architectures. 
+  - It is more critical to know where data can be duplicated than to prevent it. 
+
+
+These are often some of the hardest challenges data professionals face. It is difficult to validate the accuracy of data that represents observations that we're trying to understand. 
+
+#### Mechanisms for managing accuracy
+
+1. Data Dictionaries
+   - Defining your variables with clear expectations about value ranges and what is being measured or observed is critical for others working with the data, especially those who are unlikely to have been present when the data was collected or observed.
+
+
+2. Segmentation
+   - segmenting data during data collection based on how it was collected or generated (i.e. manually vs. programmatically) can help provide insight into the potential for data errors or accuracy issues. 
+
+
+3. Standardization (units and measurement collection methods)
+   - How do we know that the information representing multiple instances of a variable are measured or collected in the same manner?
+     - were patients in a clinical study weighed in full clothes or a johnny? 
+     - what time of day? 
+     - was height measured in shoes or barefoot? 
+     - were 40 yard dash times on grass or the track? outdoor or indoor? 
+
+
+Without standard units and measures, as well as standardizations in the way that the data is represented and encoded, the resultant data may be unreliable. These are issues that become invisible to data engineers and data scientists during analysis, but may have a significant impact on the resulting information and insights. 
+
+---
+
+### Validity
+
+**Does the data actually measure what we think it measures?**
+
+This topic is about the evaluation of the relationship between a dataset and its purpose. Data can be valid in one case, but invalid in another. 
+
+A common example of this is using "width" as a proxy for measuring "age" in a tree. Another example is the use of Olympic times or World Cup performances as measurements of yearly statistics. (The Olympics and World Cup don't occur yearly)
+
+### Samples
+
+Obtaining data for an entire population can be difficult in many real world scenarios. Sports statistics for professionals is simple, because the information for every player in a league is available. In pharmaceuticals, or life sciences, this is less the case. As of this writing, obtaining health and vital signs for ~10 billion people is not practical
+
+As a result, we have to borrow from the science of experimentation, which includes cutting out a subset of the entire population. 
+
+A sample is a subset of a population, limited by one or more constraints to make studying that population more practical (or even possible at all.)
+
+There are two primary types of sampling. 
+
+1. Convenience Samples
+2. Representative Samples
+
+#### Convenience Samples
+
+We refer to these as "convenience samples", because they are convenient. These are "quick and dirty." It's very fast. 
+
+These are very flawed, but they aren't without their benefits. A convenience sample's primary benefit is speed. The data is quickly available which is useful for a basic, preliminary understanding of the dataset. 
+
+**Examples:**
+- comparing MLB catchers to represent batting statistics for all major league players.
+- using NY state census response to reflect the entire United States. 
+
+The disadvantages are numerous. These types of samples aren't good for representing the broader population because they are unlikely to be sufficiently randomized, nor have a balanced representation of the features (variables) within the dataset.
+
+
+One of the most important dimensions of the sample we have to consider is it's size. The sample size must be large enough to provide enough diversity to accurately represent the shape and variance characteristics of the overall population.
+
+The consequences of convenience are various categories of **bias**. **Bias** is the arch-enemy of good data. It can result in incorrect, inaccurate and invalid information which generates insights that lead us astray. 
+
+Samples of a population that aren't a sufficient representation of that data often risk becoming anecdotes rather than becoming targeted insights that drive intelligence. 
+
+
+#### Representative Samples
+
+We refer to these as a "representative sample', because (if it isn't obvious) the sample represents the greater population.
+
+The goal of a representative sample is represent that population as accurately as possible. In terms of data science, this means _finding a mix of observations that contain all of the features in the larger population._
+
+This is hard, and it involves techniques to randomize and minimize bias. Explaining this in detail would make this document a lot longer than it already is, so I'd prefer to hand wave over it right now. (Happy to supplement in later iterations upon request. My Venmo account is...).
+
+
+
+
+

@@ -8,7 +8,7 @@ NOTE: You might see LaTex notation. That's because this content was originally s
 
 **Garbage In, Garbage Out** 
     
-    Our data-driven conclucsions are only as strong, robust and well-supported as the data behind them. 
+Our data-driven conclusions are only as strong, robust and well-supported as the data behind them. 
 
 ![Garbage In, Garbage Out](gigo.png)
 
