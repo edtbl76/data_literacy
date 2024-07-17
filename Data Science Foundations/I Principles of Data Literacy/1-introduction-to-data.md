@@ -10,7 +10,7 @@ NOTE: You might see LaTex notation. That's because this content was originally s
     
 Our data-driven conclusions are only as strong, robust and well-supported as the data behind them. 
 
-![Garbage In, Garbage Out](gigo.png)
+![Garbage In, Garbage Out](img/gigo.png)
 
 Understanding and communicating data means asking the **right** questions so that we end up with useful relevant data. 
 

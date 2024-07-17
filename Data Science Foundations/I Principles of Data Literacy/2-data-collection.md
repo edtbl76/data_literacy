@@ -81,7 +81,7 @@ complex relationship of data is:
 ```
 
 ### The Shape of Data
-![not-tidy-tidy.png](not-tidy-tidy.png)
+![not-tidy-tidy.png](img/not-tidy-tidy.png)
 
 - **variables** are represented in the diagram by the "measurables" 
   - height, species, city, highway,e tc. 
