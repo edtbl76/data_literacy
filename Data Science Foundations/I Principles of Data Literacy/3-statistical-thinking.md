@@ -172,3 +172,20 @@ Directionality of coefficients is similar to basic linear analysis. **Positive c
 
 Directionality is important, however it is not the determining factor for a relationship. The strength or magnitude of a relationship is measured by its proximity to 1. A correlation coefficient 1 is absolutely related, while a coefficient of 0 is completely unrelated. 
 
+
+_Strong correlation_ 
+
+![strong-correlation.png](img/strong-correlation.png)
+
+
+_Weak correlation_
+
+![weak-correlation.png](img/weak-correlation.png)
+
+
+_50% correlation_
+
+![mid-correlation.png](img/mid-correlation.png)
+
+I like to show the 50% mark, because it provides an excellent demonstration of how ambiguous the midpoint actually looks. If you carefully review the datapoints here, you'll see the positive and negative correlation in comparison to a weak correlation of 0. However, it's quite difficult to see a linear relationship when juxtaposed against strongly correlated plots. 
+
