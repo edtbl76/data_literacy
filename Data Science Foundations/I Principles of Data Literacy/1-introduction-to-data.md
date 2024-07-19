@@ -28,6 +28,17 @@ Bias-Focused Questions
 - Who was left out? 
 - Who made the data? 
 
+
+## Misinformation vs. Disinformation
+
+Misinformation is simply "incorrect" information that is spread regardless of any intention to mislead. This could be intentional or unintentional. 
+
+**Disinformation** has a more specific political/military meaning derived from espionage However, generally it is any information that is deliberately misleading or biased. It is propaganda.
+
+This is an important concept to consider, especially as governments evolve to accommodate newer technologies. The ability to provide evidentiary information about the intention of data, whether willful or due to gross negligence continues to grow. That data has also increasingly finding representation in both legal courts as well as the court of public opinion. 
+
+
+
 ---
 ## What are statistics? 
 
